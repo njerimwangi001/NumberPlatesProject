@@ -34,9 +34,10 @@ cars<-function(plate1,plate2){
   num1<-as.numeric(paste(x1[4:6],collapse=""))
   num2<-as.numeric(paste(x2[4:6],collapse=""))
   
-  cars<-575424*position2+23976*position3+999*position7+num2
-  cars
+  cars<-999*26*26*position2+999*26*position3+999*position7+num2
+ noquote (paste0("The number of cars is: " ,cars))
 
 }
 
+#Test the function
 cars(KAA021J,KCC576K)
